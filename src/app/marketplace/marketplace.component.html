@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-offset-4">
+        <h2>Marketplace</h2>
+        <p>
+          All products will be listed here
+        </p>
+      </div>
+
+      <div *ngFor="let album of albums" class="panel panel-default" (click)="goToDetailPage(album)">
+        <div class="panel-heading">
+        <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+      </div>
+        <div class="panel-body">
+          <p>{{album.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

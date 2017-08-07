@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-offset-4">
+        <h2>Clubs</h2>
+      </div>
+
+      <div *ngFor="let club  of clubs" class="panel panel-default">
+        <div class="panel-heading">
+        <h3><em>{{club.name}}</em> coached by {{club.coach}}<span>&nbsp;<a href="" routerLink="{{club.code}}">Go</a></span></h3>
+      </div>
+        <div class="panel-body">
+          <p>{{club.stadium}} and {{club.captain}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
